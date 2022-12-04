@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function bigImg(x) {
+    x.style.height = "500px";
+    x.style.width = "380px";
+  }
+  
+  function normalImg(x) {
+    x.style.height = "450px";
+    x.style.width = "350px";
+  }
+  </script>
+
+<style> 
+  #myDIV {
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    background-color:rgb(54, 46, 41);
+    background-clip: border-box;
+    color: white;
+    border: 5px dotted lightgrey;
+  }
+  </style>
+
+
+</head>
+
+<body>
+
+  
+    
+      <ul class="nav nav-tabs justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" href="file:///Users/aashnajain/Documents/2nd%20Year%20Projects/Creative%20Coding/Portfolio/projects.html">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="file:///Users/aashnajain/Documents/2nd%20Year%20Projects/Creative%20Coding/Portfolio/blog%20write%20up.html">BLOG</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="file:///Users/aashnajain/Documents/2nd%20Year%20Projects/Creative%20Coding/Portfolio/Contact.html">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="games.html">GAMES</a>
+        </li>
+      
+       
+      </ul>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+       
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Screenshot 2022-12-04 at 11.35.33 AM.png" alt="slide1" class="d-block" style="width:100% ; ">
+          </div>
+          <div class="carousel-item">
+            <img  src="images/Screenshot 2022-12-04 at 11.36.05 AM.png" alt="slide2" class="d-block" style="width:100% ; ">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Screenshot 2022-12-04 at 11.36.25 AM.png" alt="slide3" class="d-block" style="width:100% ;">
+          </div>
+        </div>
+        
+    
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      
+
+      
+
+      
+      <div style="background-color: rgb(54, 46, 41);" class="p-5 text-white text-center ">
+        <h1 onmouseover="style.color='white'" onmouseout="style.color='rgb(241, 226, 226)'" style="color:white; padding-top:50px;">ABOUT ME</h1>
+        <h2 onmouseover="style.color='white'" onmouseout="style.color='pink'" style="padding-bottom: 30px;">_____</h2>
+        <div class="row">
+          <div class="col-sm-6">
+            <p style="margin-top: 100px; font-size: 20px;">Hi! I'm Aashna Jain, an aspiring communication designer..<br> I enjoy interacting, experimenting and putting myself out there. Apart from creating and illustrating, I like exploring further and deeper into things that intrigue me.
+            <br> Moreover, design whether in the form of pen and paper or digital has always been something I have enjoyed.  </p> 
+            </div>
+            <div class="col-sm-6">
+              <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/WhatsApp Image 2022-10-02 at 9.22.33 PM.jpeg" alt="Smiley" width="350" height="auto">
+            </div>
+            <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:rgb(238, 204, 204);width:50%;height:50%;padding:40px;">
+Mouse Over Me</div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "ILLUSTRATE- ANIMATE- CREATE"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "What do I mainly do?"
+}
+</script>
+
+        </div>
+       
+        
+      </div>
+
+     
+
+     
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .home{
+   padding: 50px;
+
+            
+        }
+        #myDIV {
+  background-color: rgb(54, 46, 41);
+  width: 270px;
+  height: 100px;
+  overflow: auto;
+  transition: all 2s;
+}
+
+#myDIV:hover {
+  background-color: pink;
+  width: 80%;
+  height:50%;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+
+</style>
+</head>
+<body style="background-color: rgb(241, 226, 226);">
+  <div id="myDIV">
+    <p style="color: pink; padding: 5px;">Hover here, got a little something to add to your source of entertainment..</p>
+    <h1 style="padding-left: 5px; color:rgb(54, 46, 41); font-size:xx-large;">GAMES</h1>
+    <p style="color: rgb(54, 46, 41);">View the games in store for you:</p>
+    <ul style="color: rgb(54, 46, 41);">
+      <li>
+        Rock, Paper and Scissors
+        
+      </li>
+      <li>
+        Pac-man
+      </li>
+      <li>
+        Shooter Game
+        
+      </li>
+    </ul>
+    <input style="margin: 10px;margin-left:20px; border: 2px; border-radius: 10px; border-color: rgb(54, 46, 41);" type="button" value="RPS" onclick="newDoc1()">
+      
+      <script>
+      function newDoc1() {
+      window.location.assign("gamesss/rock,paper,sciss/index1.html")
+      }
+      </script>
+       <input style="margin: 10px;margin-left:20px; border: 2px; border-radius: 10px; border-color: rgb(54, 46, 41);" type="button" value="PAC-MAN" onclick="newDoc2()">
+      
+       <script>
+       function newDoc2() {
+       window.location.assign("pac man game/index3.html")
+       }
+       </script>
+        <input style="margin: 10px;margin-left:20px; border: 2px; border-radius: 10px; border-color: rgb(54, 46, 41);" type="button" value="SHOOTER GAME" onclick="newDoc3()">
+      
+        <script>
+        function newDoc3() {
+        window.location.assign("Shooter game/index2.html")
+        }
+        </script>
+  </div>
+  
+  <script>
+  function myFunction() {
+    document.getElementById("myDIV").style.transitionDelay = "2s";
+  }
+  </script>
+ <script>
+  function myFunction() {
+    document.getElementById("myDIV").style.transitionDelay = "2s";
+  }
+  </script>
+ <script>
+  function myFunction() {
+    document.getElementById("myDIV").style.transitionDelay = "2s";
+  }
+  </script>
+
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  <div class="home">
+    <input type="button" value="BACK HOME" onclick="newDoc()">
+
+<script>
+function newDoc() {
+window.location.assign("index.html")
+}
+</script>
+  </div>
+
+</body>
+</html>

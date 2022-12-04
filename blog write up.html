@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:  rgb(122, 90, 72);
+  color:white;
+}
+.container1{
+    text-align: center;
+    background-color: rgb(241, 226, 226);
+    margin: 0%;
+    padding:100px;
+}
+
+
+input[type=text], input[type=password] {
+  width: 95%;
+  padding: 15px;
+  margin: 5px ;
+  border: none;
+  background: #f1f1f1;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+
+}
+.home{
+   padding: 50px;
+  background-color: rgb(241, 226, 226);
+            
+        }
+        
+  .droptarget {
+  float: left; 
+  width: 100px; 
+  height: 35px;
+  margin: 15px;
+  padding: 10px;
+  border: 2px solid white;
+  background-color: rgb(232, 192, 192);
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="container1">
+<h1 onmouseover="style.color='white'" onmouseout="style.color=' rgb(122, 90, 72)'"style="font-size:45px;">BLOG <br>______</h1>
+<p style="color: rgb(122, 90, 72);">One of the best things about graphic design is that it never stands still for a moment. There is always something new out 
+    there. Experimentation doesn't end in a field of this sort and it's so much more than just sitting in front of the screen, one 
+    of the reasons why I got further inclined to pursuing this field. 
+
+</p>
+<p style="color: rgb(122, 90, 72);">Apart from this I do enjoy a good game of chess, sketching, badminton and music. I am a night person who does not see the light of day 
+    before 10 in the morning and am also someone who enjoys horror movies but ironically is scared of the dark.</p>
+    
+    <p style="color: rgb(122, 90, 72);">I am both quiet and talkative depending on the situation and I enjoy interacting and conversing with new people 
+        whenever given the chance. In terms of work, I am very organized and give my best at whatever I do. During my ideation 
+        process, I like getting other perspectives and thus by the end of it I usually know what I'm going for.
+    </p>
+
+
+</div>
+<div>
+  <h3 onmouseover="style.color='white'" onmouseout="style.color=' pink';">Would you like to see more work like this in the future?</h3>
+ <p>Drag your preferred response to the box below: </p>
+<div class="droptarget2" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget2">Yes</p>
+</div>
+<div class="droptarget1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget1">No</p>
+</div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<p id="demo"></p>
+
+<script>
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+  document.getElementById("demo").innerHTML = "(:)";
+}
+
+function dragEnd(event) {
+  document.getElementById("demo").innerHTML = "Good to know!! ";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+}
+</script>
+
+</div>
+
+<div class="container2">
+    <h1 onmouseover="style.color='white'" onmouseout="style.color=' rgb(122, 90, 72)'"style="text-align: center; font-size: 40px; padding: 30px;padding-top:50px ;">Get in touch!</h1>
+    <h2>Login</h2>
+
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button style="margin: 10px;" type="submit" class="btn">Login</button>
+  </form>
+</div>
+
+
+</div>
+
+
+
+  <div class="home">
+    <input type="button" value="BACK HOME" onclick="newDoc()">
+
+<script>
+function newDoc() {
+window.location.assign("index.html")
+}
+</script>
+  </div>
+
+
+  
+
+
+
+</body>
+</html>

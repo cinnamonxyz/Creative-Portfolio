@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.bg-image {
+  height: 50%; 
+  background-position: center;
+  background-size: cover;
+}
+
+
+.img1 { background-image: url("images/Screenshot 2022-10-02 at 10.24.05 PM.png"); }
+.img2 { background-image: url("images/Screenshot 2022-10-02 at 10.24.19 PM.png"); }
+.img3 { background-image: url("images/Screenshot 2022-10-02 at 10.30.08 PM.png"); }
+.img4 { background-image: url("images/Screenshot 2022-10-02 at 10.34.24 PM.png"); }
+
+
+
+.bg-text {
+  
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: 10px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+.home{
+   padding: 50px;
+  background-color: rgb(241, 226, 226);
+            
+        }
+</style>
+</head>
+<body>
+
+<div class="bg-image img1"></div>
+<div class="bg-image img2"></div>
+<div class="bg-image img3"></div>
+<div class="bg-image img4"></div>
+
+
+<div class="bg-text"><u>CONTACT</u>
+    <p style="font-size: 20px; "> Instagram: Aashna_2023 <br> Email: aashj2003@gmail.com </p>
+    <p><u>CREATE AN ACCOUNT:</u></p>
+    <script>  
+      function validateform(){  
+      var name=document.myform.name.value;  
+      var password=document.myform.password.value;  
+        
+      if (name==null || name==""){  
+        alert("Name can't be blank");  
+        return false;  
+      }else if(password.length<6){  
+        alert("Password must be at least 6 characters long.");  
+        return false;  
+        }  
+      }  
+      </script>  
+      <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+      Name: <input type="text" name="name"><br/>  
+      Password: <input type="password" name="password"><br/>  
+      <input type="submit" value="register">  
+      </form>  
+</div>
+
+
+<div class="home">
+  <input type="button" value="BACK HOME" onclick="newDoc()">
+
+<script>
+function newDoc() {
+window.location.assign("index.html")
+}
+</script>
+</div>
+
+
+
+</body>
+</html>
